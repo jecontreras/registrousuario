@@ -1,0 +1,74 @@
+<div class="container">
+  <br>
+  <br>
+  <div class="row">
+    <div class="col">
+      <div class="d-flex justify-content-center">
+        <h5>Listado de Usuario</h5>
+      </div>
+    </div>
+    <div class="form-group col-sm-5">
+      <input type="text" class="form-control" placeholder="Buscar Usuario" [(ngModel)]="text">
+    </div>
+    <div class="form-group col-sm-2">
+      <button (click)="buscar()" type="button" class="btn btn-primary">Buscar</button>
+    </div>
+    <div>
+      <button (click)="descar()" type="button" class="btn btn-primary">Descargar</button>
+      <button [routerLink]="['/registro']" routerLinkActive="router-link-active" type="button"
+        class="btn btn-primary">Registrar</button>
+    </div>
+  </div>
+  <div class="column">
+
+    <table class="table">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">nombre</th>
+          <th scope="col">Cedula</th>
+          <th scope="col">Telefono</th>
+          <th scope="col">Dirección</th>
+          <th scope="col">Comuna</th>
+          <th scope="col">Puesto de Votacion</th>
+          <th scope="col">Mesa</th>
+          <th scope="col">Opciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of list_usuario; let idx = index">
+          <th>
+            {{ idx+1 }}
+          </th>
+          <th>
+            {{ item.nombre }}
+          </th>
+          <th>
+            {{ item.cedula }}
+          </th>
+          <th>
+            {{ item.telefono }}
+          </th>
+          <th>
+            {{ item.direccion }}
+          </th>
+          <th>
+            {{ item.comuna }}
+          </th>
+          <th>
+            {{ item.puesto }}
+          </th>
+          <th>
+            {{ item.mesa }}
+          </th>
+          <th>
+            <button [routerLink]="['/registro', item.id]" routerLinkActive="router-link-active" type="button"
+              class="btn btn-primary">Ver</button>
+          </th>
+        </tr>
+      </tbody>
+    </table>
+
+
+  </div>
+</div>
