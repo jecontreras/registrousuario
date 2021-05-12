@@ -28,7 +28,7 @@
     "angular-froala-wysiwyg": "^3.0.1",
     "body-parser": "^1.18.2",
     "bootstrap": "^4.3.1",
-    "chart.js": "^2.7.3",
+    "chart.js": "^2.9.4",
     "core-js": "^2.5.4",
     "file-saver": "^2.0.2",
     "froala-editor": "^3.0.0",
