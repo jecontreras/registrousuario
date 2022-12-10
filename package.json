@@ -26,7 +26,7 @@
     "@ngx-share/core": "^7.1.2",
     "@types/moment": "^2.13.0",
     "angular-froala-wysiwyg": "^3.0.1",
-    "body-parser": "^1.18.2",
+    "body-parser": "^1.20.1",
     "bootstrap": "^4.3.1",
     "chart.js": "^2.7.3",
     "core-js": "^2.5.4",
